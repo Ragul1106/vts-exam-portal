@@ -2,7 +2,6 @@
   position: absolute;
   top: 8%;
   right: 15%;
-  /* Keep existing styles like these */
   padding: 30px;
   border-radius: 10px;
 }
@@ -20,7 +19,7 @@
 }
 
 .login-button:hover {
-  background-color: #00cc00; 
+  background-color: #aef006; 
 }
 @media (max-width: 1024px) {
   .login-form {

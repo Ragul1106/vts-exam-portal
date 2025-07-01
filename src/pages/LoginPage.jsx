@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; // 👈 Import icons
 import profileImg from '../assets/images/Img 5.png';
-import './LoginForm.css'
+import './LoginForm.css';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false); // 👈 For toggle
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
@@ -29,10 +31,10 @@ const LoginForm = () => {
 
     if (user && user.password === password) {
       localStorage.setItem('userName', user.name);
-      localStorage.setItem('userImage', user.image); // Save image path
+      localStorage.setItem('userImage', user.image);
       navigate('/overview');
     } else {
-      setError('Invalid email or password. Only Kavya or Ramesh can login.');
+      setError('Invalid email or password.');
     }
   };
 
@@ -57,16 +59,29 @@ const LoginForm = () => {
             />
           </div>
 
-          <div className="form-group">
+          <div className="form-group position-relative">
             <label htmlFor="password">Password</label>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"} 
               id="password"
               placeholder="Enter your Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
+            <span
+              onClick={() => setShowPassword(!showPassword)}
+              className="password-toggle-icon"
+              style={{
+                position: "absolute",
+                right: "10px",
+                top: "38px",
+                cursor: "pointer",
+                color: "#555"
+              }}
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </span>
           </div>
 
           <div className="d-flex justify-content-center mt-3">
