@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import TrainerCard from "../pages/TrainerCard";
 
-import priyaImg from "../assets/images/img 1.png";
-import rithikaImg from "../assets/images/img 2.png";
-import reshmaImg from "../assets/images/img 3.png";
+import priyaImg from "../assets/images/Img 1.png";
+import rithikaImg from "../assets/images/Img 2.png";
+import reshmaImg from "../assets/images/Img 3.png";
 
 const TrainersList = () => {
   const [allTrainers, setAllTrainers] = useState([]);
