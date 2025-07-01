@@ -1,0 +1,60 @@
+.login-form {
+  position: absolute;
+  top: 8%;
+  right: 15%;
+  /* Keep existing styles like these */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+.login-button {
+   background-color: #d6ff63 ;
+  color: #000000; 
+  border: none;
+  padding: 10px 5px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #00cc00; 
+}
+@media (max-width: 1024px) {
+  .login-form {
+    right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 20px;
+  }
+
+  .login-form h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .login-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

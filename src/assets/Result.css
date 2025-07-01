@@ -1,0 +1,9 @@
+.table-header-dark {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.table-body-green tr {
+  background-color: #d6ff63 !important;
+  color: #fff !important;
+}
