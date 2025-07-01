@@ -54,20 +54,17 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li className="nav-item mb-2">
-          <span
-            className="nav-link d-flex align-items-center gap-2"
-            style={{
-              color: "white",           
-              cursor: "not-allowed",               
-              pointerEvents: "none"      
-            }}
-            title="Coming Soon"
+          <NavLink
+            to="/upload-paper"
+            onClick={handleNavClick}
+            className={({ isActive }) =>
+              `nav-link hover-custom d-flex align-items-center  gap-2 ${isActive ? "active-custom" : ""}`
+            }
           >
             <FaCode />
             Development
-          </span>
+          </NavLink>
         </li>
-
         <li className="nav-item mb-2">
           <NavLink
             to="/exam"

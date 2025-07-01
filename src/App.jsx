@@ -24,14 +24,12 @@ const AppLayout = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        {/* Sidebar for large screens */}
         {!isLoginPage && (
           <nav className="col-lg-2 d-none d-lg-block bg-dark sidebar p-0">
             <Sidebar />
           </nav>
         )}
-
-        {/* Mobile top header and sidebar */}
+        
         {!isLoginPage && (
           <>
             <div className="d-lg-none bg-dark p-2 text-white d-flex justify-content-between align-items-center">
