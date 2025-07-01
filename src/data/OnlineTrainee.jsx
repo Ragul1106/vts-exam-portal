@@ -1,4 +1,3 @@
-// src/data/OnlineTrainee.jsx
 import profileImg from '../assets/images/Img 5.png';
 import rahul from '../assets/images/ragul.webp';
 import surya from '../assets/images/surya.jpeg';

@@ -19,18 +19,15 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* Logo Section */}
       <div className="bg-light text-dark border-black border p-3 d-flex align-items-center gap-2">
         <img src={logo} alt="Logo" width={40} height={40} className="rounded-circle mt-3" />
         <div>
           <h6 className="mb-0 mt-2 fs-5 px-3 fw-bold">
             VTS Exam <br /> Portal
-            {/* <small>Portal</small>  */}
           </h6>
         </div>
       </div>
 
-      {/* Nav Menu */}
       <ul className="nav flex-column p-3">
         <li className="nav-item mb-2">
           <NavLink

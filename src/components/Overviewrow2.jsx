@@ -23,6 +23,7 @@ const OverviewRow2 = () => {
   const [dynamicTrainers, setDynamicTrainers] = useState([]);
   const [dynamicExams, setDynamicExams] = useState([]);
   const [showAllTrainers, setShowAllTrainers] = useState(false);
+  
 
   const [formData, setFormData] = useState({ name: "", role: "", trainees: "", img: "" });
   const [formError, setFormError] = useState("");
