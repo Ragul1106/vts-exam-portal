@@ -82,7 +82,7 @@ const Exam = ({ name, image, today, radiumGreen = '#d7f96a' }) => {
                   Start Exam
                 </button>
               </div>
-              <div className="d-flex mb-5 justify-content-between align-items-center border border-primary p-3 rounded bg-transparent">
+              <div className="d-flex mb-3 justify-content-between align-items-center border border-primary p-3 rounded bg-transparent">
                 <div className="mb-3 fs-4">
                   <strong>Figma Practical Questions</strong><br />
                   <small className="text-muted">Duration: 1 Day</small>

@@ -9,14 +9,6 @@ import { FaCode } from "react-icons/fa";
 import "../assets/Sidebar.css";
 
 const Sidebar = () => {
-  // const handleNavClick = () => {
-  //   const offcanvasElement = document.querySelector(".offcanvas");
-  //   const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
-  //   if (bsOffcanvas) {
-  //     bsOffcanvas.hide();
-  //   }
-  // };
-
   return (
     <>
       <div className="bg-light text-dark border-black border p-3 d-flex align-items-center gap-2">
@@ -32,7 +24,6 @@ const Sidebar = () => {
         <li className="nav-item mb-2">
           <NavLink
             to="/overview"
-            // onClick={handleNavClick}
             className={({ isActive }) =>
               `nav-link hover-custom d-flex align-items-center gap-2 ${isActive ? "active-custom" : ""}`
             }
@@ -44,7 +35,6 @@ const Sidebar = () => {
         <li className="nav-item mb-2">
           <NavLink
             to="/designing"
-            // onClick={handleNavClick}
             className={({ isActive }) =>
               `nav-link hover-custom d-flex align-items-center gap-2 ${isActive ? "active-custom" : ""}`
             }
@@ -56,7 +46,6 @@ const Sidebar = () => {
         <li className="nav-item mb-2">
           <NavLink
             to="/upload-paper"
-            // onClick={handleNavClick}
             className={({ isActive }) =>
               `nav-link hover-custom d-flex align-items-center  gap-2 ${isActive ? "active-custom" : ""}`
             }
@@ -68,7 +57,6 @@ const Sidebar = () => {
         <li className="nav-item mb-2">
           <NavLink
             to="/exam"
-            // onClick={handleNavClick}
             className={({ isActive }) =>
               `nav-link hover-custom d-flex align-items-center gap-2 ${isActive ? "active-custom" : ""}`
             }
@@ -80,7 +68,6 @@ const Sidebar = () => {
         <li className="nav-item mb-2">
           <NavLink
             to="/result"
-            // onClick={handleNavClick}
             className={({ isActive }) =>
               `nav-link hover-custom d-flex align-items-center gap-2 ${isActive ? "active-custom" : ""}`
             }
