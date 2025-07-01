@@ -47,6 +47,15 @@ const TechnicalExamPart2 = () => {
   return (
     <div className="d-flex">
       <div className="flex-grow-1 p-4" style={{ backgroundColor: '#f7fdf0' }}>
+        <style>
+          {`
+            input[type="radio"].form-check-input:checked {
+              background-color: black !important;
+              border-color: black !important;
+            }
+          `}
+        </style>
+
         <h3 className="text-center mb-4 fw-bold">Figma Technical Questions</h3>
         <div className="rounded p-4 fs-3" style={{ backgroundColor: '#f0facc' }}>
           {questions.map((question, qIndex) => (
@@ -57,7 +66,7 @@ const TechnicalExamPart2 = () => {
                   <div className="col-md-3 col-sm-6 mb-2" key={oIndex}>
                     <div className="form-check">
                       <input
-                        className="form-check-input bg-transparent border-black"
+                        className="form-check-input custom-radio-input bg-transparent border-black"
                         type="radio"
                         name={`q${qIndex}`}
                         id={`q${qIndex}_opt${oIndex}`}
@@ -76,10 +85,18 @@ const TechnicalExamPart2 = () => {
           ))}
 
           <div className="d-flex justify-content-center gap-4 mt-4">
-            <button className="btn btn-primary px-4" style={{ backgroundColor: '#0c1248', border: 'none' }} onClick={goToPrevious}>
+            <button
+              className="btn btn-primary px-4"
+              style={{ backgroundColor: '#0c1248', border: 'none' }}
+              onClick={goToPrevious}
+            >
               Previous
             </button>
-            <button className="btn px-4" style={{ backgroundColor: '#d6ff63', color: '#000' }} onClick={handleSubmit}>
+            <button
+              className="btn px-4"
+              style={{ backgroundColor: '#d6ff63', color: '#000' }}
+              onClick={handleSubmit}
+            >
               Submit
             </button>
           </div>

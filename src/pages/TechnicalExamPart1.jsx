@@ -27,7 +27,16 @@ const TechnicalExamPart1 = () => {
   };
 
   return (
-    <div className="flex-grow-1 p-4" style={{ backgroundColor: '#f7fdf0' }}>
+    <div className="flex-grow-1 p-4" >
+      <style>
+        {`
+          input[type="radio"].form-check-input:checked {
+            background-color: black !important;
+            border-color: black !important;
+          }
+        `}
+      </style>
+
       <h3 className="text-center mb-4 fw-bold">Figma Technical Questions</h3>
       <div className="rounded p-4 fs-3" style={{ backgroundColor: '#f0facc' }}>
         {questions.map((question, qIndex) => (
@@ -38,7 +47,7 @@ const TechnicalExamPart1 = () => {
                 <div className="col-md-3 col-sm-6 mb-2" key={oIndex}>
                   <div className="form-check">
                     <input
-                      className="form-check-input bg-transparent border-black"
+                      className="form-check-input custom-radio-input bg-transparent border-black"
                       type="radio"
                       name={`q${qIndex}`}
                       id={`q${qIndex}_opt${oIndex}`}
@@ -57,10 +66,18 @@ const TechnicalExamPart1 = () => {
         ))}
 
         <div className="d-flex justify-content-center gap-3 me-5 mt-4">
-          <button className="btn mx-5 btn-primary" style={{ backgroundColor: '#0c1248', border: 'none' }} onClick={goToPrevious}>
+          <button
+            className="btn mx-5 btn-primary"
+            style={{ backgroundColor: '#0c1248', border: 'none' }}
+            onClick={goToPrevious}
+          >
             Previous
           </button>
-          <button className="btn" style={{ backgroundColor: '#d6ff63', color: '#000' }} onClick={goToNext}>
+          <button
+            className="btn"
+            style={{ backgroundColor: '#d6ff63', color: '#000' }}
+            onClick={goToNext}
+          >
             Next
           </button>
         </div>

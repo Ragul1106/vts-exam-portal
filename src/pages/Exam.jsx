@@ -25,7 +25,7 @@ const Exam = ({ name, image, today, radiumGreen = '#d7f96a' }) => {
     <div className="container mt-4">
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-lg-8">
-          {/* Header */}
+  
           <div className="d-flex align-items-center p-3 rounded mb-3 w-100">
             <img
               src={userImage}
@@ -43,7 +43,7 @@ const Exam = ({ name, image, today, radiumGreen = '#d7f96a' }) => {
           <h5 className="mb-3">Upcoming Exams</h5>
 
           <div className="card p-3 w-100" style={{ backgroundColor: radiumGreen }}>
-            {/* Exam 1 */}
+     
             <div className="mb-4">
               <div className="d-flex justify-content-between align-items-center mb-2">
                 <strong>Technical Questions</strong>
@@ -69,7 +69,6 @@ const Exam = ({ name, image, today, radiumGreen = '#d7f96a' }) => {
               </div>
             </div>
 
-            {/* Exam 2 */}
             <div>
               <div className="d-flex justify-content-between align-items-center mb-2">
                 <strong>Practical Questions</strong>
