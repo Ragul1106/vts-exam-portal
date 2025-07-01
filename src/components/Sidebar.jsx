@@ -23,9 +23,9 @@ const Sidebar = () => {
       <div className="bg-light text-dark border-black border p-3 d-flex align-items-center gap-2">
         <img src={logo} alt="Logo" width={40} height={40} className="rounded-circle mt-3" />
         <div>
-          <h6 className="mb-0 mt-3 fs-4 px-3 fw-bold">
-            VTS Exam
-            <small>Portal</small> 
+          <h6 className="mb-0 mt-3 fs-5 px-3 fw-bold">
+            VTS Exam <br /> Portal
+            {/* <small>Portal</small>  */}
           </h6>
         </div>
       </div>
