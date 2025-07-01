@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import priyaImg from "../assets/images/img 1.png";
-import rithikaImg from "../assets/images/img 2.png";
-import reshmaImg from "../assets/images/img 3.png";
+import priyaImg from "../assets/images/Img 1.png";
+import rithikaImg from "../assets/images/Img 2.png";
+import reshmaImg from "../assets/images/Img 3.png";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const OverviewRow2 = () => {
