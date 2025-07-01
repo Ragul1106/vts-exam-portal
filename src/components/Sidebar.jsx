@@ -1,4 +1,3 @@
-// Sidebar.jsx
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
@@ -25,7 +24,8 @@ const Sidebar = () => {
         <img src={logo} alt="Logo" width={40} height={40} className="rounded-circle mt-3" />
         <div>
           <h6 className="mb-0 mt-3 fs-4 px-3 fw-bold">
-            VTS Exam <br /> Portal
+            VTS Exam
+            <small>Portal</small> 
           </h6>
         </div>
       </div>
