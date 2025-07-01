@@ -119,8 +119,8 @@ const Result = () => {
               <th style={cellStyle}>S.No</th>
               <th style={cellStyle}>Trainee's Name</th>
               <th style={cellStyle}>Trainer Name</th>
-              <th style={cellStyle}>Technical Marks (Out of 30)</th>
-              <th style={cellStyle}>Practical Marks (Out of 70)</th>
+              <th style={cellStyle}>Technical Marks <br /> (Out of 30)</th>
+              <th style={cellStyle}>Practical Marks <br /> (Out of 70)</th>
               <th style={cellStyle}>Total Marks</th>
             </tr>
           </thead>
