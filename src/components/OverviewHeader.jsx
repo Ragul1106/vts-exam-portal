@@ -1,6 +1,6 @@
 import React from "react";
 import notificationIcon from "../assets/images/Notification.png";
-import profilePic from "../assets/images/img 1.png";
+import profilePic from "../assets/images/Img 1.png";
 import { FaSearch } from "react-icons/fa";
 import traineesIcon from "../assets/images/Total Trainees.png";
 import coursesIcon from "../assets/images/courses.png";
