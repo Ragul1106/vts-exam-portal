@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../App.css';
 
 const TraineeProfile = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
+   useEffect(() => {
+          document.title = 'VTS_Exam_Portal | Trainee Profile';
+        }, []);
 
   const name = state?.name || 'N/A';
   const image = state?.image || 'https://via.placeholder.com/100';
@@ -70,7 +73,6 @@ const TraineeProfile = () => {
     <div className="container-fluid py-4">
       <div className="row gy-4 justify-content-between">
 
-        {/* Left Side: Welcome + Upcoming Exams */}
         <div className="col-12 col-md-10 col-lg-5 d-flex flex-column align-items-center">
           <div className="d-flex align-items-center p-3 rounded w-100 bg-white shadow-sm">
             <img
@@ -125,7 +127,6 @@ const TraineeProfile = () => {
           </div>
         </div>
 
-        {/* Right Side: Profile + Calendar */}
         <div className="col-12 col-md-10 col-lg-5 d-flex flex-column align-items-center">
           <div className="card text-center p-4 w-100" style={{ backgroundColor: '#e6ffb3' }}>
             <img

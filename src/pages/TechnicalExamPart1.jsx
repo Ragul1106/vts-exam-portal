@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const TechnicalExamPart1 = () => {
@@ -25,6 +25,10 @@ const TechnicalExamPart1 = () => {
   const goToPrevious = () => {
     navigate('/exam');
   };
+
+   useEffect(() => {
+          document.title = 'VTS_Exam_Portal | Technical exam Part1';
+        }, []);
 
   return (
     <div className="flex-grow-1 p-4" >

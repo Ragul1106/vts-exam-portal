@@ -1,25 +1,20 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaEye, FaEyeSlash } from 'react-icons/fa'; // 👈 Import icons
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
 import profileImg from '../assets/images/Img 5.png';
-import './LoginForm.css';
+import '../assets/LoginForm.css';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false); // 👈 For toggle
+  const [showPassword, setShowPassword] = useState(false); 
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const validUsers = {
-    'kavya.uiux@vts.in': {
-      password: 'kavya123',
-      name: 'Kavya',
-      image: profileImg
-    },
-    'ramesh.uiux@vts.in': {
+    'ragul.python@vts.in': {
       password: 'ramesh123',
-      name: 'Ramesh',
+      name: 'Ragul',
       image: profileImg
     }
   };

@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import TraineeCard from '../components/TraineeCard';
 import { offlineTrainees } from '../data/OfflineTrainee.jsx';
 
 const OfflineTrainees = () => {
+
+   useEffect(() => {
+        document.title = 'VTS_Exam_Portal | Offline Trainees';
+      }, []);
+
   return (
     <div className="d-flex">
       <div className="container-fluid">

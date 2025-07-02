@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaEnvelope, FaPhone, FaChalkboardTeacher } from 'react-icons/fa';
 import TraineeCard from '../components/TraineeCard';
 import { onlineTrainees } from '../data/OnlineTrainee';
@@ -18,6 +18,9 @@ const TrainerCard = ({
   numberOfTrainees,
 }) => {
   const [showModal, setShowModal] = useState(false);
+   useEffect(() => {
+          document.title = 'VTS_Exam_Portal | Trainers';
+        }, []);
 
   const trainerOnline = onlineTrainees.filter((t) => t.trainer === name);
   const trainerOffline = offlineTrainees.filter((t) => t.trainer === name);

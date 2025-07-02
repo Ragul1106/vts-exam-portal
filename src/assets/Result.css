@@ -1,9 +1,37 @@
-.table-header-dark {
-  background-color: #000 !important;
-  color: #fff !important;
+@media (max-width: 425px) {
+  .result-table thead {
+    display: none;
+  }
+
+  .result-table, 
+  .result-table tbody, 
+  .result-table tr, 
+  .result-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .result-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #d7f96a;
+  }
+
+  .result-table td {
+    text-align: left;
+    padding: 8px;
+    position: relative;
+  }
+
+  .result-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    color: #333;
+  }
 }
 
-.table-body-green tr {
-  background-color: #d6ff63 !important;
-  color: #fff !important;
-}
+

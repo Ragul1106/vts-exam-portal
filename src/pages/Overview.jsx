@@ -1,9 +1,12 @@
-import React from "react";
-import OverviewHeader from "../components/OverviewHeader";
-import Overviewrow2 from "../components/Overviewrow2";
-import OverviewRow3 from "../components/OverviewRow3";
+import React, {useEffect} from "react";
+import OverviewHeader from "../components/Overview1";
+import Overviewrow2 from "../components/Overview2";
+import OverviewRow3 from "../components/Overview3";
 
 const Overview = () => {
+   useEffect(() => {
+          document.title = 'VTS_Exam_Portal | Overview';
+        }, []);
   return (
     <div>
       <OverviewHeader />

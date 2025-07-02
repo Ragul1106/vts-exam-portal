@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const correctAnswers = ['Left', 'Left', 'Left', 'Left', 'Left'];
@@ -22,6 +22,10 @@ const TechnicalExamPart2 = () => {
   const goToPrevious = () => {
     navigate('/technical-exam-page1');
   };
+
+   useEffect(() => {
+          document.title = 'VTS_Exam_Portal | Technical exam Part2';
+        }, []);
 
   const handleSubmit = () => {
     const part1Answers = JSON.parse(localStorage.getItem('technicalExamPart1')) || {};

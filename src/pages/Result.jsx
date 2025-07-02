@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Resultrow from '../components/Resultrow'; 
-import './Result.css'
+import '../assets/Result.css'
 
 const RADIUM_GREEN = '#d7f96a';
 
@@ -15,6 +15,11 @@ const staticData = [
 ];
 
 const Result = () => {
+
+   useEffect(() => {
+          document.title = 'VTS_Exam_Portal | Result';
+        }, []);
+        
   const [rows, setRows] = useState([]);
   const [editMode, setEditMode] = useState(false);
 

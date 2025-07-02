@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {  useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 const Exam = ({ name, image, today, radiumGreen = '#d7f96a' }) => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  useEffect(() => {
+      document.title = 'VTS_Exam_Portal | Exam';
+    }, []);
 
   const userData = location.state || {};
   const localName = localStorage.getItem('userName');

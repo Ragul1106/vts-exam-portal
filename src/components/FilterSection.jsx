@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaSearch, FaFilter } from "react-icons/fa";
-import Sidebar from "./Sidebar";
-import OverviewRow2 from "./Overviewrow2";
-import OverviewRow3 from "./OverviewRow3";
-import AddTraineeModal from "../components/AddTrainees"; 
+import OverviewRow2 from "./Overview2";
+import OverviewRow3 from "./Overview3";
+import AddTraineeModal from "../components/AddTrainees";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css";
 
@@ -19,6 +18,10 @@ const FilterSection = () => {
   });
 
   const navigate = useNavigate();
+
+   useEffect(() => {
+          document.title = 'VTS_Exam_Portal | Designing';
+        }, []);
 
   const toggleModal = () => setShowModal(!showModal);
 

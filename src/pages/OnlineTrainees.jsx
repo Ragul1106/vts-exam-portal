@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import TraineeCard from '../components/TraineeCard';
 import { onlineTrainees } from '../data/OnlineTrainee.jsx';
 
 const OnlineTrainees = () => {
+   useEffect(() => {
+          document.title = 'VTS_Exam_Portal | Online Trainees';
+        }, []);
   return (
     <div className="d-flex">
       <div className="container-fluid">
