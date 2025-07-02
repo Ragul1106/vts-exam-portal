@@ -13,7 +13,7 @@ const LoginForm = () => {
 
   const validUsers = {
     'ragul.python@vts.in': {
-      password: 'ramesh123',
+      password: 'ragul123',
       name: 'Ragul',
       image: profileImg
     }
