@@ -1,35 +1,31 @@
-import React, {  useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 const Exam = ({ name, image, today, radiumGreen = '#d7f96a' }) => {
-  const navigate = useNavigate();
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
-      document.title = 'VTS_Exam_Portal | Exam';
-    }, []);
+    document.title = 'VTS_Exam_Portal | Exam';
+  }, []);
 
   const userData = location.state || {};
-  const localName = localStorage.getItem('userName');
-  const localImage = localStorage.getItem('userImage');
+  const userName = userData.name || 'Trainee';
+  const userImage = userData.image || 'https://lumenor.ai/cdn-cgi/imagedelivery/F5KOmplEz0rStV2qDKhYag/407edefa-d36e-40fd-0b7f-6b35b3525500/tn';
 
-  const userName = localName || name || userData.name || 'Trainee';
-  const userImage = localImage || image || userData.image || 'https://via.placeholder.com/50';
+  const currentDate = userData.today || new Date().toLocaleDateString('en-GB', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
 
-  const currentDate =
-    today ||
-    new Date().toLocaleDateString('en-GB', {
-      weekday: 'long',
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-    });
 
   return (
     <div className="container mt-4">
       <div className="row justify-content-center">
         <div className="col-12 w-100 col-md-10 col-lg-8">
-  
+
           <div className="d-flex align-items-center p-3 rounded mb-3 w-100">
             <img
               src={userImage}
@@ -47,7 +43,7 @@ const Exam = ({ name, image, today, radiumGreen = '#d7f96a' }) => {
           <h5 className="mb-3 fs-2">Upcoming Exams</h5>
 
           <div className="card p-3 w-100" style={{ backgroundColor: radiumGreen }}>
-     
+
             <div className="mb-4">
               <div className="d-flex fs-4 p-2 justify-content-between align-items-center mb-2">
                 <strong>Technical Questions</strong>
