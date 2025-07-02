@@ -77,7 +77,7 @@ const TrainerCard = ({
         </div>
       </div>
 
-      {/* Modal */}
+
       {showModal && (
         <div className="modal fade show d-block" tabIndex="-1" style={{ backgroundColor: 'rgba(0,0,0,0.5)' }} onClick={() => setShowModal(false)}>
           <div className="modal-dialog modal-lg modal-dialog-centered" onClick={(e) => e.stopPropagation()}>

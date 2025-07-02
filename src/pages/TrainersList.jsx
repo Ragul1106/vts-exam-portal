@@ -44,8 +44,8 @@ const TrainersList = () => {
 
   return (
     <div className="container mt-4">
-      <h5 className="mt-3">
-        <Link to="/trainers" className="text-decoration-none text-black mx-1">
+      <h5 className="mt-3 mb-5">
+        <Link to="/trainers" className="text-decoration-none text-primary mx-1">
           Trainer Name
         </Link>
         &gt;

@@ -21,7 +21,7 @@ const OfflineTrainees = () => {
             Online Trainees
           </Link>
           &gt;
-          <Link to="/offline-trainees" className="text-decoration-none mx-1 text-black">
+          <Link to="/offline-trainees" className="text-decoration-none mx-1 text-primary">
             Offline Trainees
           </Link>
         </h5>
